@@ -66,7 +66,7 @@ async fn main() -> Result<(), Error> {
         .await;
 
     match list_result {
-        Result::Ok(objects) => {
+        Result::Ok(_objects) => {
             println!(
                 "Succeeded in listing the bucket {} as {}",
                 args.bucket.clone().unwrap_or_default(),
